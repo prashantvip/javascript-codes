@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+<div id="parent">
+    <button id="child">Child</button>
+  </div>
+</body>
+
+<script>
+  var parent = document.querySelector('#parent');
+    // < !--Add click event on parent div-- >
+    parent.addEventListener('click', function () {
+      console.log("Parent clicked");
+    });
+
+  var child = document.querySelector('#child');
+    // < !--Add click event on child button-- >
+    child.addEventListener('click', function () {
+      console.log("Child clicked");
+    });
+</script>
+
+</html>
+
+
+
